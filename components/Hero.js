@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 import ReactFlagsSelect from "react-flags-select";
-
+import InputMask from 'react-input-mask';
 import { useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 export default function Hero() {
@@ -32,7 +32,6 @@ const [number,setNumber]=useState("");
 
 function MaskedInput(e){
   console.log(e.target.value)
-  setSelected()
 }
 
 
@@ -76,10 +75,10 @@ function MaskedInput(e){
                   className="flag-select"
                 />
                 <label className="flex-1 relative group block cursor-pointer">
-                  <input
+                  <InputMask
                     required
-                    max={"9"}
-                    value={number}
+                    mask="(999) 999 99 99"
+                    
                     onChange={(e)=>MaskedInput(e)}
                     className="h-14 px-4 border-2 border-gray-200 rounded w-full transition-colors group-hover:border-primary-brand-color focus:border-primary-brand-color outline-none peer text-sm pt-2"
                   />

@@ -29,6 +29,14 @@ class MyDocument extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+
+
+
+
+<script src="https://unpkg.com/react/dist/react.min.js"></script>
+<script src="https://unpkg.com/react-dom/dist/react-dom.min.js"></script>
+<script src="https://unpkg.com/react-input-mask/dist/react-input-mask.min.js"></script>
+
         </Head>
         <body>
           <Main />

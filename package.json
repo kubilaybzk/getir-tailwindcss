@@ -15,6 +15,7 @@
     "react-flags-select": "^2.2.3",
     "react-icons": "^4.4.0",
     "react-imask": "^6.4.2",
+    "react-input-mask": "^2.0.4",
     "react-slick": "^0.29.0"
   },
   "devDependencies": {
