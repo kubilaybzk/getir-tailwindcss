@@ -11,14 +11,9 @@ import Favorites from "components/Favorites";
 export default function index() {
   return (
     <>
-      <Header />
-      <Hero />
+
       <Categories />
-      <Offers />
-      <Favorites/>
-      <Download />
-      <SmallBoxs />
-      <Footer />
+      
       
     </>
   );
