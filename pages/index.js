@@ -13,7 +13,8 @@ export default function index() {
     <>
 
       <Categories />
-      
+      <Favorites/>
+
       
     </>
   );
