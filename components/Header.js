@@ -6,19 +6,19 @@ import {
 } from "react-icons/bs";
 export default function Header() {
   return (
-    <div className="bg-brand-color">
+    <div className="bg-brand-color pl-5">
       <div className="container mx-auto h-11 flex items-center justify-between">
       <div className="flex flex-row justify-between gap-x-3">
       <a href="#">
           <img className="pt-0.5" src="/getir.png" width={46} />
         </a>
-        <a href="#" className="text-white hover:text-yellow-400 transition-all">GetirYemek</a>
-        <a href="#" className="text-white hover:text-yellow-400 transition-all">GetirBüyük</a>
-        <a href="#" className="text-white hover:text-yellow-400 transition-all">GetirSu</a>
-        <a href="#" className="text-white hover:text-yellow-400 transition-all">GetirÇarşı</a>
+        <a href="#" className="text-white hover:text-yellow-400 transition-all"> <span className="text-xs md:text-sm">  GetirYemek </span>     </a>
+        <a href="#" className="text-white hover:text-yellow-400 transition-all"> <span className="text-xs md:text-sm">  GetirBüyük </span>     </a>
+        <a href="#" className="text-white hover:text-yellow-400 transition-all"> <span className="text-xs md:text-sm">  GetirSu    </span>     </a>
+        <a href="#" className="text-white hover:text-yellow-400 transition-all"> <span className="text-xs md:text-sm">  GetirÇarşı </span>     </a>
       </div>
 
-        <nav className="flex flex-row gap-x-8">
+        <nav className="flex flex-row gap-x-8 hidden md:flex">
           <a
             className=" text-white flex flex-row items-center gap-x-2 transition-all font-bold hover:text-yellow-300"
             href="#"

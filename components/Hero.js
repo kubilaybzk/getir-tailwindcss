@@ -17,7 +17,6 @@ export default function Hero() {
   };
 
   const [selected, setSelected] = useState("TR");
-
   const phones = {
     US: "+1",
     DE: "+50",
@@ -39,7 +38,8 @@ function MaskedInput(e){
   return (
     <>
       <div className="relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
-        <Slider {...settings}>
+      
+        <Slider {...settings} className="hidden md:block">
           <div>
             <img className="w-full h-[500px] object-cover z-20" src="/1.jpg" />
           </div>
@@ -54,18 +54,20 @@ function MaskedInput(e){
             <img className="w-full h-[500px] object-cover z-20" src="/4.jpg" />
           </div>
         </Slider>
-        <div className="container flex justify-between items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
-          <div className="">
+        <div className="md:container flex justify-between items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
+                    {/* Sol Text ve Logo */}
+          <div className="hidden md:block">
             <img src="/logo.svg" />
             <h3 className="text-4xl mt-8 font-semibold text-white">
               Siparişiniz Dakikalar <br /> içinde kapınızda <br />
             </h3>
           </div>
-          <div className="w-[400px] rounded-lg bg-gray-50 p-6">
+          {/* Burası Giriş yap Kayıt ol kısmının olduğu sağ alan */}
+          <div className="w-full md:w-[400px] md:rounded-lg bg-gray-50 p-6">
             <h4 className="text-primary-brand-color text-center font-semibold mb-4">
               Giriş yap veya kayıt ol
             </h4>
-            <div class="grid gap-y-3">
+            <div className="grid gap-y-3">
               <div className="flex gap-x-2">
                 <ReactFlagsSelect
                   countries={Object.keys(phones)}
@@ -89,11 +91,6 @@ function MaskedInput(e){
               </div>
               <button className="bg-brand-yellow text-primary-brand-color transition-colors hover:bg-primary-brand-color hover:text-brand-yellow h-12 flex items-center justify-center rounded-md w-full text-sm font-semibold ">
                 Telefon numarası ile devam et
-              </button>
-              <hr className="h-[1px] bg-gray-300 my-2" />
-              <button className="bg-blue-700 bg-opacity-10 text-blue-700 px-4 text-opacity-80 transition-colors hover:bg-blue-700 hover:text-white h-12 flex items-center rounded-md w-full text-sm font-semibold ">
-                <FaFacebook size={24} />
-                <span className="mx-auto">Facebook ile devam et</span>
               </button>
             </div>
           </div>
