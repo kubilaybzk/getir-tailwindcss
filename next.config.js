@@ -5,8 +5,8 @@ const nextConfig = {
     loader: "akamai",
     path: "",
   },
-  basePath: "/nextjs-pages",
-  assetPrefix: "/nextjs-pages",
+  basePath: "/getir-tailwindcss",
+  assetPrefix: "/getir-tailwindcss",
 };
 
 module.exports = nextConfig;
