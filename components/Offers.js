@@ -72,7 +72,7 @@ export default function Offers() {
             banners.map((banner, index) => (
               <div key={banner.id}>
                 <picture className="block md:px-2">
-                  <img src={banner.image} className="md:rounded-lg" />
+                  <img alt={`banner-image-${index}`} src={banner.image} className="md:rounded-lg" />
                 </picture>
               </div>
             ))}

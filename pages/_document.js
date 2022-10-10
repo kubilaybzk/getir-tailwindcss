@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto"
+            href="https://fonts.googleapis.com/css?family=Roboto&display=optional"
             rel="stylesheet"
           ></link>
           <link
@@ -33,9 +33,9 @@ class MyDocument extends Document {
 
 
 
-<script src="https://unpkg.com/react/dist/react.min.js"></script>
-<script src="https://unpkg.com/react-dom/dist/react-dom.min.js"></script>
-<script src="https://unpkg.com/react-input-mask/dist/react-input-mask.min.js"></script>
+<script async src="https://unpkg.com/react/dist/react.min.js"></script>
+<script async src="https://unpkg.com/react-dom/dist/react-dom.min.js"></script>
+<script async src="https://unpkg.com/react-input-mask/dist/react-input-mask.min.js"></script>
 
         </Head>
         <body>

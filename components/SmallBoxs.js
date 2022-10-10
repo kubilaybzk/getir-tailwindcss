@@ -12,9 +12,10 @@ export default function SmallBoxs() {
   return (
     <div className="md:flex md:flex-row md:justify-center ">
       {smallbox.length &&
-        smallbox.map((card) => (
-          <div className="bg-white p-14 rounded-lg shadow-sm flex flex-col items-center text-center">
+        smallbox.map((card,key) => (
+          <div key={key} className="bg-white p-14 rounded-lg shadow-sm flex flex-col items-center text-center">
             <img
+            alt={`SmallBoxs-${key}`}
               className="w-[150px] h-[150px] mb-6"
               src={card.image}
             />

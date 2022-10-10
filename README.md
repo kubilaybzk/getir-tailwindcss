@@ -1,24 +1,34 @@
-# Nextjs ,React ve Tailwind ile Getir Anasayfa Klonu.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Tailwind ile ilgili pratik yapmak için internette dolaşırken Youtube üzerinden  [Tayfun Erbilen](https://github.com/tayfunerbilen)  tarafından yayınlanan  [React + Tailwind = Getir Anasayfa ](https://www.youtube.com/watch?v=E7RMBak8CAk) video serisine denk geldim ve gerçekten tailwind mantığını kavramak için gerekli iyi bir örnek olacağını düşünerek  [Getir'i](https://getir.com/) kendi kendime NextJS üzerinden kodlamaya başladım. 
+## Getting Started
 
-# Run almak. 
-Projeyi klonladıktan sonra terminal üzerinden ekteki komutu  ççalıştırmanız yeterli.
-  
+First, run the development server:
 
-      nmp i && npm run dev
-    
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## Responsible media query
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-|                |Min                          |Max                         |
-|----------------|-------------------------------|-----------------------------|
-|sm|`'0'`            |'640px'            |
-|lg          |`"641px"`            |"748px"            |
-|xl          |`1280px`|">1280px"|
-# Mobil görünüm.
-![Mobile](https://github.com/kubilaybzk/getir-tailwindcss/blob/main/Github%C4%B0mages/screencapture-localhost-3000-2022-07-18-15_49_10.png?raw=true)
-# Tablet görünüm.
-![alt text](https://github.com/kubilaybzk/getir-tailwindcss/blob/main/Github%C4%B0mages/screencapture-localhost-3000-2022-07-18-15_49_41.png)
-# Büyük ekran görünümü.
-![alt text](https://github.com/kubilaybzk/getir-tailwindcss/blob/main/Github%C4%B0mages/screencapture-localhost-3000-2022-07-18-16_07_30.png)
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

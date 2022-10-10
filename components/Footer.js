@@ -1,5 +1,5 @@
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
-import { FiGlobe } from "react-icons/fi";
+import { BiGlobe } from "react-icons/bi";
 import { AiOutlineArrowDown } from "react-icons/ai";
 function Footer() {
   const menus = [
@@ -76,23 +76,23 @@ function Footer() {
               className="absolute top-0 inset-x-0 w-full h-12 opacity-0  cursor-pointer peer !border-none"
             />
             <h1 className="text-primary-brand-color text-lg -mt-2 md:hidden">
-              Getir'i indirin!
+              {`Getir'i indirin!`}
             </h1>
             <AiOutlineArrowDown className="text-primary-brand-color text-2xl absolute top-3 right-3  transition-transform duration-500 rotate-0 peer-checked:rotate-180 md:hidden " />
             <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-max md:overflow-visible">
               <section className="mx-auto container">
                 <nav className="md:grid md:gap-y-4 grid gap-y-5 mx-auto">
                   <h6 className="md:text-lg md:text-primary-brand-color hidden md:block">
-                    Getir'i indirin!
+                   {`Getir'i indirin!`}
                   </h6>
                   <a href="#">
-                    <img src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg" />
+                    <img alt="getir-footer-1" src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg" />
                   </a>
                   <a href="#">
-                    <img src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg" />
+                    <img alt="getir-footer-2" src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg" />
                   </a>
                   <a href="#">
-                    <img src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg" />
+                    <img alt="getir-footer-3" src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg" />
                   </a>
                 </nav>
               </section>
@@ -101,13 +101,13 @@ function Footer() {
 
           {menus.map((item2, key) => {
             return (
-              <div className="h-[200] relative overflow-hidden p-4 md:overflow-visible">
+              <div key={key} className="h-[200] relative overflow-hidden p-4 md:overflow-visible">
               <input
                 type="checkbox"
                 className="absolute top-0 inset-x-0 w-full h-12 opacity-0  cursor-pointer peer !border-none"
               />
               <h1 className="text-primary-brand-color text-lg -mt-2 md:hidden">
-                Getir'i indirin!
+                {`Getir'i indirin!`}
               </h1>
               <AiOutlineArrowDown className="text-primary-brand-color text-2xl absolute top-3 right-3  transition-transform duration-500 rotate-0 peer-checked:rotate-180 md:hidden " />
               <div className="bg-white overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-max md:overflow-visible">
@@ -168,7 +168,7 @@ function Footer() {
               href="#"
               className="h-8 transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color hover:border-transparent flex items-center px-2 text-sm gap-x-2 rounded text-gray-500 border border-gray-100"
             >
-              <FiGlobe size={18} />
+              <BiGlobe size={18} />
               Türkçe (TR)
             </a>
           </nav>

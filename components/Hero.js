@@ -41,23 +41,23 @@ function MaskedInput(e){
       
         <Slider {...settings} className="hidden md:block">
           <div>
-            <img className="w-full h-[500px] object-cover z-20" src="/1.jpg" />
+            <img alt="getir-Hero-1" className="w-full h-[500px] object-cover z-20" src="/1.jpg" />
           </div>
           <div>
-            <img className="w-full h-[500px] object-cover z-20" src="/2.jpg" />
+            <img alt="getir-Hero-2" className="w-full h-[500px] object-cover z-20" src="/2.jpg" />
           </div>
           <div>
-            <img className="w-full h-[500px] object-cover z-20" src="/3.jpg" />
+            <img alt="getir-Hero-3" className="w-full h-[500px] object-cover z-20" src="/3.jpg" />
           </div>
 
           <div>
-            <img className="w-full h-[500px] object-cover z-20" src="/4.jpg" />
+            <img alt="getir-Hero-4" className="w-full h-[500px] object-cover z-20" src="/4.jpg" />
           </div>
         </Slider>
         <div className="md:container flex justify-between items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
                     {/* Sol Text ve Logo */}
           <div className="hidden md:block">
-            <img src="/logo.svg" />
+            <img alt="getir-Hero-Logo" src="/logo.svg" />
             <h3 className="text-4xl mt-8 font-semibold text-white">
               Siparişiniz Dakikalar <br /> içinde kapınızda <br />
             </h3>
