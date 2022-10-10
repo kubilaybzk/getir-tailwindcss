@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
-  basePath: '/gh-pages',
-}
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    loader: "akamai",
+    path: "",
+  },
+  basePath: "/nextjs-pages",
+  assetPrefix: "/nextjs-pages",
+};
+
+module.exports = nextConfig;
