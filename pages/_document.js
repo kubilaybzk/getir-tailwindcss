@@ -33,8 +33,7 @@ class MyDocument extends Document {
 
 
 
-<script async src="https://unpkg.com/react/dist/react.min.js"></script>
-<script async src="https://unpkg.com/react-dom/dist/react-dom.min.js"></script>
+
 <script async src="https://unpkg.com/react-input-mask/dist/react-input-mask.min.js"></script>
 
         </Head>
